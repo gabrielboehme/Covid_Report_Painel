@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 #Import database
-df = pd.read_csv('../Dados/covid_data.csv')
+df = pd.read_csv('Dados/covid_data.csv')
 
 #Routes
 @app.route('/')
@@ -28,7 +28,7 @@ def index():
     corr = df.corr()
     h_index = list(corr.iloc[:,1:].index)
     h_values = corr.values
-    today_deaths = pd.read_csv('../ETL/covid_hospital_data.csv')['todayDeaths'].sum()
+    today_deaths = pd.read_csv('ETL/covid_hospital_data.csv')['todayDeaths'].sum()
 
     #KPI's
     total_deaths = df['deaths'].sum()
