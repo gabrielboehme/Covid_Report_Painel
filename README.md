@@ -1,6 +1,6 @@
 # Covid-19 Report Painel
 
-![Intro Pic](images/main.png)
+![Intro Pic](images/Main.png)
 
 ## Table of Contents
 1. [Project Motivation](#Motivation)
