@@ -1,6 +1,6 @@
-# Einstein Painel
-[Link](https://einsteinpainel.herokuapp.com/)
-![Intro Pic](Images/Painel.png)
+# Covid-19 Report Painel
+
+![Intro Pic](images/main.png)
 
 ## Table of Contents
 1. [Project Motivation](#Motivation)
@@ -22,7 +22,8 @@ This is a project for the Einstein Floripa selection process.
 ### Dependencies
 * Python 3.5+ (I used Python 3.7)
 * Data Science libraries: NumPy, Pandas
-* Web App and Data Visualization: Streamlit
+* Web App and Data Visualization: Flask & Plotly
+* Requests library for getting data from API's
 
 <a name="installing"></a>
 ### Installing
@@ -35,12 +36,12 @@ git clone https://github.com/gabrielboehme/Disaster-Response-Painel.git
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in new .csv files
-        `python ETL/transform_data.py`
+        `python ETL/transform_covid.py`
 
 2. Run the following command in the app's directory to run your web app.
-    `streamlit run app.py`
+    `python app.py`
 
-3. Go to http://localhost:8501/
+3. Go to http://localhost:5000/
 
 <a name="Author"></a>
 ## Authors
@@ -56,16 +57,20 @@ git clone https://github.com/gabrielboehme/Disaster-Response-Painel.git
 <a name="screenshots"></a>
 ## Screenshots
 
-1. Example of report that you can analyze, with a focus on the general statistics.
+1. Example of KPI's:
 
-![Main report](Images/Main_report.png)
+![KPI's](images/KPI.png)
+
+2. Example of Deaths by State plot:
+
+![Deaths](images/Mortes_estado.png)
 
 
-2. Example of report that you can analyze, with a focus on the students statistics.
+3. Example of Cases by State plot:
 
-![Studens Statistics](Images/Student_report.png)
+![Cases](images/Casos_estado.png)
 
 
-3. Example of report that you can analyze, with a focus on the courses statistics.
+4. Example of correlation between features heatmap plot:
 
-![Courses Statistics](Images/Course_report.png)
+![Heatmap](images/Heatmap.png)
