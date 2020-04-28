@@ -118,8 +118,7 @@ def index():
     return render_template('master.html', ids=ids, graphJSON=graphJSON, total_deaths=total_deaths, total_cases=total_cases, worst_state=worst_state, today_deaths=today_deaths)
 
 def main():
-    app.run(host='0.0.0.0', port=3001, debug=True)
-
+    app.run()
 
 if __name__ == '__main__':
     main()
